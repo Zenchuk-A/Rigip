@@ -1,49 +1,50 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="jquery.nicescroll.min.js"></script>
-    <script>
-      var w_arr = [
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="jquery.nicescroll.min.js"></script>
+  <script>
+    var w_arr = [
       ['Dachgeschoß-Ausbau Brandschutz El 30 mit 15 cm Mineralwolldämmung (für den Brandschutz erforderlich)',
-      'Dachgeschoß-Ausbau Brandschutz El 90'],
+        'Dachgeschoß-Ausbau Brandschutz El 90'],
       ['Doppel-Ständerwand CW 75+75/205',
-      'Rigips-Wohntrennwand Doppel-Ständerwand CW 75+75/220'],
+        'Rigips-Wohntrennwand Doppel-Ständerwand CW 75+75/220'],
       ['Einfach-Ständerwand CW 75/100',
-      'Einfach-Ständerwand CW 75/125',
-      'Einfach-Ständerwand CW 100/150',
-      'Duo´Tech Einfach- Ständerwand RB,RBI CW 75/125',
-      'Duo´Tech Einfach- Ständerwand RF,RFI CW 75/125',
-      'Duo´Tech Einfach- Ständerwand DL CW 75/125',
-      'Metallständerwand einfach beplankt 12,5mm Rigips Habito'],
+        'Einfach-Ständerwand CW 75/125',
+        'Einfach-Ständerwand CW 100/150',
+        'Duo´Tech Einfach- Ständerwand RB,RBI CW 75/125',
+        'Duo´Tech Einfach- Ständerwand RF,RFI CW 75/125',
+        'Duo´Tech Einfach- Ständerwand DL CW 75/125',
+        'Metallständerwand einfach beplankt 12,5mm Rigips Habito'],
       ['Abgehängte Decke mit Lochplatte mit Metall- Unterkonstruktion'],
       ['Einfachständerwand mit einlagiger Beplankung aus Rigips Aquaroc',
-      'Einfachständerwand mit zweilagiger Beplankung aus Rigips Aquaroc',
-      'Vorsatzschale mit einlagiger Beplankung aus Rigips Aquaroc',
-      'Schachtwand mit zweilagiger Beplankung aus Rigips Aquaroc',
-      'Underdecke mit einfach Bekleidung (kein Brandschutz)'],
+        'Einfachständerwand mit zweilagiger Beplankung aus Rigips Aquaroc',
+        'Vorsatzschale mit einlagiger Beplankung aus Rigips Aquaroc',
+        'Schachtwand mit zweilagiger Beplankung aus Rigips Aquaroc',
+        'Underdecke mit einfach Bekleidung (kein Brandschutz)'],
       ['Schachtwand El 90 mit 3x15 RF, CW75',
-      'Schachtwand El 90 mit 2x20 RF, CW75, e=100'],
+        'Schachtwand El 90 mit 2x20 RF, CW75, e=100'],
       ['Abgeh. Decke m. Metall-UK Brandschutz El 30 v. unten o. Berücksichtigung d. Rohdecke',
-      'Abgehängte Decke mit Metall-Unterkonstruktion ohne Mineralwolle Brandschutz El 90 von unten',
-      'Abgehängte Decke mit Metall-Unterkonstruktion',
-      'Direkt montierte Decke mit Direktabhänger',
-      'Abgeh. Decke m. Metall-UK Brandschutz'],
+        'Abgehängte Decke mit Metall-Unterkonstruktion ohne Mineralwolle Brandschutz El 90 von unten',
+        'Abgehängte Decke mit Metall-Unterkonstruktion',
+        'Direkt montierte Decke mit Direktabhänger',
+        'Abgeh. Decke m. Metall-UK Brandschutz'],
       ['Vorsatzschale auf Justierschwingbügel'],
       ['Abgeh. Decke m. Metall-UK Brandschutz El 30 v. unten o. Berücksichtigung d. Rohdecke',
-      'Abgehängte Decke mit Metall-Unterkonstruktion ohne Mineralwolle Brandschutz El 90 von unten',
-      'Abgehängte Decke mit Metall-Unterkonstruktion',
-      'Direkt montierte Decke mit Direktabhänger',
-      'Einfach-Ständerwand CW 75/100',
-      'Einfach-Ständerwand CW 75/125',
-      'Einfach-Ständerwand CW 100/150',
-      'Doppel-Ständerwand CW 75+75/205',
-      'Rigips-Wohntrennwand Doppel-Ständerwand CW 75+75/220',
-      'Dachgeschoß-Ausbau Brandschutz El 30 mit 15 cm Mineralwolldämmung (für den Brandschutz erforderlich)',
-      'Dachgeschoß-Ausbau Brandschutz El 90',
-      'Schachtwand El 90 mit 3x15 RF, CW75',
-      'Schachtwand El 90 mit 2x20 RF, CW75, e=100',
-      'Abgeh. Decke m. Metall-UK Brandschutz'],
+        'Abgehängte Decke mit Metall-Unterkonstruktion ohne Mineralwolle Brandschutz El 90 von unten',
+        'Abgehängte Decke mit Metall-Unterkonstruktion',
+        'Direkt montierte Decke mit Direktabhänger',
+        'Einfach-Ständerwand CW 75/100',
+        'Einfach-Ständerwand CW 75/125',
+        'Einfach-Ständerwand CW 100/150',
+        'Doppel-Ständerwand CW 75+75/205',
+        'Rigips-Wohntrennwand Doppel-Ständerwand CW 75+75/220',
+        'Dachgeschoß-Ausbau Brandschutz El 30 mit 15 cm Mineralwolldämmung (für den Brandschutz erforderlich)',
+        'Dachgeschoß-Ausbau Brandschutz El 90',
+        'Schachtwand El 90 mit 3x15 RF, CW75',
+        'Schachtwand El 90 mit 2x20 RF, CW75, e=100',
+        'Abgeh. Decke m. Metall-UK Brandschutz'],
       [],
       [],
       [],
@@ -51,382 +52,441 @@
       [],
       []];
 
-      $(document).ready(function() {  
-        $("#body_frame").niceScroll({cursorcolor:"#1b8fcc",cursoropacitymin: 0.5});
-      });
-      function clrDiv(){
-        for(var i=document.getElementById('body_frame').children.length;i>0;i--){
-          document.getElementById('body_frame').removeChild(document.getElementById('body_frame').children[0])
-        }
+    $(document).ready(function () {
+      $("#body_frame").niceScroll({ cursorcolor: "#1b8fcc", cursoropacitymin: 0.5 });
+    });
+    function clrDiv() {
+      for (var i = document.getElementById('body_frame').children.length; i > 0; i--) {
+        document.getElementById('body_frame').removeChild(document.getElementById('body_frame').children[0])
       }
-      function divClick(inID){
-        clrDiv();
-        var n_div1 = document.createElement("div");
-        var tmp_head = document.getElementById(inID).innerText.replace('&nbsp;','').trim();
-        n_div1.innerText = tmp_head;
-        n_div1.id = "body_head";
-        document.getElementById('body_frame').appendChild(n_div1);
-        if(inID>8){inID=8;}
-        for(var j=0;j<w_arr[inID].length;j++){      
-          var n_div2 = document.createElement("div");
-          n_div2.innerHTML = w_arr[inID][j];
-          n_div2.setAttribute("class","body_item_text");
-          n_div2.id="itxt_"+inID+"_"+j;
-          document.getElementById('body_frame').appendChild(n_div2);
-          var n_div3 = document.createElement("div");
-          n_div3.innerHTML = "Berechnen";
-          n_div3.setAttribute("class","body_item_button");
-          n_div3.id="ibtn_"+inID+"_"+j;
-          n_div3.setAttribute("onclick","btnBerechnen(this.id)");
-          document.getElementById('body_frame').appendChild(n_div3);
-        }
+    }
+    function divClick(inID) {
+      clrDiv();
+      var n_div1 = document.createElement("div");
+      var tmp_head = document.getElementById(inID).innerText.replace('&nbsp;', '').trim();
+      n_div1.innerText = tmp_head;
+      n_div1.id = "body_head";
+      document.getElementById('body_frame').appendChild(n_div1);
+      if (inID > 8) { inID = 8; }
+      for (var j = 0; j < w_arr[inID].length; j++) {
+        var n_div2 = document.createElement("div");
+        n_div2.innerHTML = w_arr[inID][j];
+        n_div2.setAttribute("class", "body_item_text");
+        n_div2.id = "itxt_" + inID + "_" + j;
+        document.getElementById('body_frame').appendChild(n_div2);
+        var n_div3 = document.createElement("div");
+        n_div3.innerHTML = "Berechnen";
+        n_div3.setAttribute("class", "body_item_button");
+        n_div3.id = "ibtn_" + inID + "_" + j;
+        n_div3.setAttribute("onclick", "btnBerechnen(this.id)");
+        document.getElementById('body_frame').appendChild(n_div3);
       }
-      var rowCnt=8;    
-      function btnBerechnen(bID){
-        var head2=document.getElementById(bID.replace("btn","txt")).innerText;
-        var now = new Date();
-        var outDate=(now.getMonth()+1)+"-"+now.getDate()+"-"+now.getFullYear();
-        clrDiv();
-        
-        var meh='Stk';
-        var rowString='';
-        var mt3='';
-        for(var i=1;i<=rowCnt;i++){
-          mt3=(i==1)?' margin-top:3px;':'';
-          rowString=rowString+'<div class="tab_cell" style="'+mt3+'overflow:hidden;"><div id="line1'+i+'" class="body_item_text margin4text" style="width:301px; height:25px;">'+
-          '<select id="sel'+i+'" name="sel'+i+'" class="body_item_button sel" style="padding-top:0px;">'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 2500mm (5200571206)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 2600mm (5200571208)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3000mm (5200571210)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3250mm (5200571211)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3750mm (5200571213)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 4500mm (5200571217)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 5500mm (5200571219)</option>'+
-          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 6000mm (5200571220)</option>'+
-          '</select>'+
-          '</div></div><div class="tab_cell" style="'+mt3+'"><div id="line2'+i+'" class="body_item_text margin4text" style="width:70px; height:25px; text-align:right;margin-right:5px;">'+2.0.toFixed(2)+'</div></div><div class="tab_cell" style="'+mt3+'"><div id="line3'+i+'" class="body_item_text margin4text" style="width:90px; height:25px; text-align:center;">'+meh+'</div></div>'+
-          '<div class="tab_cell" style="'+mt3+'border-right:none;"><div class="body_item_text margin4text" style="width:11px; height:25px;">€</div></div>'+
-          '<div class="tab_cell" style="'+mt3+'border-left:none;"><div class=body_item_text margin4text" style="text-align:right; width:100px; height:25px;margin-top:5px;margin-right:5px" id="line4'+i+'">'+23.0.toFixed(2)+'</div></div>'
-        }        
-        document.getElementById('body_frame').innerHTML='<div class="table" id="mainTable"><div class="tab_header"><div class="body_item_text PUB">PLANEN UND BAUEN</div><img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:none;"><div class="body_item_button num_btn" id="num_btn">4.70.11b</div><div class="body_item_button drucken_btn" id="btnDrucken" onclick="Drucken()" style="display:block">Drucken</div><div class="tabHeader1">Rigips - Vorschäge zur Kalkulation</div><div class="tabHeader2" id="head_2">'+head2+'</div></div><div class="tab_header tab_header1"><div class="body_item_text margin4text">Geeignete Schrauben und Dübel verwenden.</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:200px; height:30px;">Geben Sie hier die benötigte Fläche ein:</div></div><div class="tab_cell"><div style="float:left;margin-top:7px;margin-left:7px;"><input type="text" id="inpNum" value="1" style="width:50px;text-align:right;" oninput="input_m2()"></div><div class="body_item_text margin4text" style="width:38px; height:25px;margin-top:10px;">m²</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:75px; height:30px;font-weight:600;text-align:center;">Gesamt-menge</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:90px; height:30px;font-weight:600;text-align:center;">MEH</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:115px; height:30px;font-weight:600;text-align:center;">Gesamtpreis</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text margin4text" style="width:200px; height:30px;">Rigips Systemkomponenten</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:95px; height:30px;" id="komponenten1"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:75px; height:30px;font-weight:600;" id="komponenten2"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:90px; height:30px;font-weight:600;" id="komponenten3"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:115px; height:30px;font-weight:600;" id="komponenten4"></div></div>'+rowString+
-        '<div class="body_item_text" style="margin-left:5px; width:479px; height:16px;">Preis für 1 m²</div><div class="tab_cell" style="border:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border:none;"><div class="body_item_text" id="preis_1" style="text-align:right;margin-right:5px; width:103px; height:16px;">'+1.3.toFixed(2)+'</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:16px;">Preis exkl. MwSt für</div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" id="preis_ex" style="text-align:right; margin-left:5px; width:114px; height:16px;">1</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" style="margin-left:7px; width:20px; height:16px;">m²</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:16px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_1" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell" style="border-bottom:none;border-top:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:16px;"></div></div><div class="tab_cell"><div class="body_item_text" style="text-align:right;margin-left:5px; width:140px; height:16px;">+20 % MwSt.</div></div><div class="tab_cell" style="border-bottom:none;border-top:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:16px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_2" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell" style="border-top:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:17px;">Gesamtpreis inkl. 20 % MwSt.</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:140px; height:16px;"></div></div><div class="tab_cell" style="border-top:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:17px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_3" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Kommentar :</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:35px;"></div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Der Materialbedarf wurde ohne Verschnitt u.sonstige Verluste ermittelt.</div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:535px; height:16px;">Verpackungseinheiten beachten!</div></div><div class="tab_cell"style="border-left:none;"><div class="body_item_text" id="curDate" style="text-align:right;margin-right:5px; width:60px; height:16px;">'+outDate+'</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Die Preise entsprechen den Rigips Listenpreisen und sind lediglich als Richtpreise zu verstehen</div></div></div>';
-        document.getElementById('mainTable').style.height=404+31*rowCnt;
-        input_m2();
-      }      
-      function input_m2(){
-        var curCnt=parseFloat(document.getElementById("inpNum").value);
-        document.getElementById("preis_ex").innerText=curCnt;
-        document.getElementById("preis_ex_1").innerText=(parseFloat(document.getElementById("preis_1").innerText)*curCnt).toFixed(2);
-        document.getElementById("preis_ex_2").innerText=(parseFloat(document.getElementById("preis_ex_1").innerText)*20/100).toFixed(2);
-        document.getElementById("preis_ex_3").innerText=(parseFloat(document.getElementById("preis_ex_1").innerText)+parseFloat(document.getElementById("preis_ex_2").innerText)).toFixed(2);
-      }
-      function Drucken() {
-        var strid = "body_frame";
-        var prtContent = document.getElementById(strid);
-        var prtCSS = '<link rel="stylesheet" href="template.css" type="text/css"/>';
-        var WinPrint = window.open('','','left=-5px,top=-5px,width=625px,height='+404+31*rowCnt+'px,toolbar=0,scrollbars=1,status=0');
-        WinPrint.document.write('<html><head>'+prtCSS+'</head><body>');
-        WinPrint.document.write('<div id="print" class="contentpane" style="margin-right:auto;margin-left:auto;margin-top:10px;">');
-        var txt4print=prtContent.innerHTML;
-        var cbString='';
-        for(var i=1;i<=rowCnt;i++){
-          cbString = '<div class="body_item_text sel">'+document.getElementById('sel'+i).value+'</div>';
-          txt4print = txt4print.replace(document.getElementById('line1'+i+'').innerHTML,cbString);
-        }
-        txt4print = txt4print.replace('<img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:none;">','<img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:block;">');
-        txt4print = txt4print.replace('<div class="body_item_button drucken_btn" id="btnDrucken" onclick="Drucken()" style="display:block">','<div class="body_item_button drucken_btn" id="btnDrucken" style="display:none;">');
-        txt4print = txt4print.replace('<input type="text" id="inpNum" value="1" style="width:50px;text-align:right;" oninput="input_m2()">','<div class="body_item_text margin4text" style="width:45px;text-align:right;">'+document.getElementById("preis_ex").innerText+'</div>');
-        debugger;
-        WinPrint.document.write(txt4print);
-        WinPrint.document.write('</div>');
-        WinPrint.document.write('<div id="btnPrnt" style="text-align:left;margin-top:10px;" onclick="this.style.display=\'none\';window.print();window.close();"><button>Drucken</button></div>');
-        WinPrint.document.write('</body></html>');
-        WinPrint.document.close();
-        //WinPrint.focus();
-        WinPrint.open();
-      }
-    </script>
-    <style>
-      @font-face {
-        font-family: Trebuchet_MS;
-        src: url(Trebuchet_MS.ttf);
-      }
-      #outer_frame{
-       width:957px;
-       height:632px;
-       color: #0b333c;
-       background:#FFFFFF;
-       border: 2px #b7babc solid;
-       -moz-border-radius: 10px;
-       -webkit-border-radius: 10px;
-       -khtml-border-radius:10px;
-       border-radius: 10px;
-       margin-top:-8px;
-       margin-left:-8px;
-       font-family: Trebuchet MS;
-      }
-      #menu_frame{
-       width:295px;
-       height:560px;
-       color: #0b333c;
-       background:#f3f3f3;
-       border: 2px solid solid;
-       -moz-border-radius: 10px;
-       -webkit-border-radius: 10px;
-       -khtml-border-radius:10px;
-       border-radius: 10px;
-       margin-top: 37px;
-       margin-left: 17px;
-       text-align: left;
-       float: left;
-      }
-      #white_square{
-        width:7px;
-        height:7px;
-        background:#FFFFFF;
-        float:left;
-        position:relative;
-        top:4px;
-      }
-      .button1
-      {
-       position: relative;
-       padding: 6px 20px;
-       margin: 0px 10px 10px 0px;
-       float: left;
-       width:240px;
-       border:2px solid #55beec;
-       border-radius: 10px;
-       font-size: 10px;
-       color: #FFF;
-       text-decoration: none;  
-       background-image: linear-gradient(to bottom, #30A5D9, #036FB3);
-      }      
-      .button2
-      {
-       position: relative;
-       padding: 4px 10px;
-       margin: 0px 5px 6px 0px;
-       float: left;
-       width:260px;
-       border:2px solid #55beec;
-       border-radius: 8px;
-       font-size: 11px;
-       font-weight:600;
-       color: #FFF;
-       text-decoration: none;  
-       background-image: linear-gradient(to bottom, #30A5D9, #036FB3);
-      }
-      .button3
-      {
-       position: relative;
-       margin: 5px 5px 14px 0px;
-       float: left;
-       width:38px;
-       height:20px; 
-       border:1px solid #888b8c;
-       border-radius: 5px;
-       font-size: 10px;
-       color: #FFF;
-       
-       background-image: linear-gradient(to bottom, #fbfbfb, #e4e4e4);
-      }
-      .button3:hover {
-        border:1px solid #0080d2;
-        background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
-      }
-      #arrow_box {
-        top: 5px;
-        left:17px;
-        position: relative;
-        background-image: linear-gradient(to bottom, #369dd3, #117bd3);
-        border: 0px solid #117bd3;
-        width:8px;
-        height:5px;
-        margin-top: 2px;
-        
-      }
-      #arrow_box:after, .arrow_box:before {
-        right: 100%;
-        top: 50%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 1;
-        position: absolute;
-        pointer-events: none;
-      }
+    }
+    var rowCnt = 8;
+    function btnBerechnen(bID) {
+      var head2 = document.getElementById(bID.replace("btn", "txt")).innerText;
+      var now = new Date();
+      var outDate = (now.getMonth() + 1) + "-" + now.getDate() + "-" + now.getFullYear();
+      clrDiv();
 
-      #arrow_box:after {
-        border-color: rgba(10, 135, 225, 0);
-        border-right-color: #0a87e1;
-        border-width: 7px;
-        margin-top: -7px;
+      var meh = 'Stk';
+      var rowString = '';
+      var mt3 = '';
+      for (var i = 1; i <= rowCnt; i++) {
+        mt3 = (i == 1) ? ' margin-top:3px;' : '';
+        rowString = rowString + '<div class="tab_cell" style="' + mt3 + 'overflow:hidden;"><div id="line1' + i + '" class="body_item_text margin4text" style="width:301px; height:25px;">' +
+          '<select id="sel' + i + '" name="sel' + i + '" class="body_item_button sel" style="padding-top:0px;">' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 2500mm (5200571206)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 2600mm (5200571208)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3000mm (5200571210)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3250mm (5200571211)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 3750mm (5200571213)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 4500mm (5200571217)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 5500mm (5200571219)</option>' +
+          '<option class="sel">Rigips CW-Profil 0,6 mm 50/75/50 mm L = 6000mm (5200571220)</option>' +
+          '</select>' +
+          '</div></div><div class="tab_cell" style="' + mt3 + '"><div id="line2' + i + '" class="body_item_text margin4text" style="width:70px; height:25px; text-align:right;margin-right:5px;">' + 2.0.toFixed(2) + '</div></div><div class="tab_cell" style="' + mt3 + '"><div id="line3' + i + '" class="body_item_text margin4text" style="width:90px; height:25px; text-align:center;">' + meh + '</div></div>' +
+          '<div class="tab_cell" style="' + mt3 + 'border-right:none;"><div class="body_item_text margin4text" style="width:11px; height:25px;">€</div></div>' +
+          '<div class="tab_cell" style="' + mt3 + 'border-left:none;"><div class=body_item_text margin4text" style="text-align:right; width:100px; height:25px;margin-top:5px;margin-right:5px" id="line4' + i + '">' + 23.0.toFixed(2) + '</div></div>'
       }
-      #head_txt {
-        top:5px;
-        left:0px;
-        position: relative;
-        float:left;
-        width:240px;
-        height:20px;
-        font-size: 17px;
-        font-weight:600;
-        color:#02334e;
-        text-align: left;
+      document.getElementById('body_frame').innerHTML = '<div class="table" id="mainTable"><div class="tab_header"><div class="body_item_text PUB">PLANEN UND BAUEN</div><img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:none;"><div class="body_item_button num_btn" id="num_btn">4.70.11b</div><div class="body_item_button drucken_btn" id="btnDrucken" onclick="Drucken()" style="display:block">Drucken</div><div class="tabHeader1">Rigips - Vorschäge zur Kalkulation</div><div class="tabHeader2" id="head_2">' + head2 + '</div></div><div class="tab_header tab_header1"><div class="body_item_text margin4text">Geeignete Schrauben und Dübel verwenden.</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:200px; height:30px;">Geben Sie hier die benötigte Fläche ein:</div></div><div class="tab_cell"><div style="float:left;margin-top:7px;margin-left:7px;"><input type="text" id="inpNum" value="1" style="width:50px;text-align:right;" oninput="input_m2()"></div><div class="body_item_text margin4text" style="width:38px; height:25px;margin-top:10px;">m²</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:75px; height:30px;font-weight:600;text-align:center;">Gesamt-menge</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:90px; height:30px;font-weight:600;text-align:center;">MEH</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:115px; height:30px;font-weight:600;text-align:center;">Gesamtpreis</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text margin4text" style="width:200px; height:30px;">Rigips Systemkomponenten</div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:95px; height:30px;" id="komponenten1"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:75px; height:30px;font-weight:600;" id="komponenten2"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:90px; height:30px;font-weight:600;" id="komponenten3"></div></div><div class="tab_cell"><div class="body_item_text margin4text" style="width:115px; height:30px;font-weight:600;" id="komponenten4"></div></div>' + rowString +
+        '<div class="body_item_text" style="margin-left:5px; width:479px; height:16px;">Preis für 1 m²</div><div class="tab_cell" style="border:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border:none;"><div class="body_item_text" id="preis_1" style="text-align:right;margin-right:5px; width:103px; height:16px;">' + 1.3.toFixed(2) + '</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:16px;">Preis exkl. MwSt für</div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" id="preis_ex" style="text-align:right; margin-left:5px; width:114px; height:16px;">1</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" style="margin-left:7px; width:20px; height:16px;">m²</div></div><div class="tab_cell" style="border-bottom:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:16px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_1" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell" style="border-bottom:none;border-top:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:16px;"></div></div><div class="tab_cell"><div class="body_item_text" style="text-align:right;margin-left:5px; width:140px; height:16px;">+20 % MwSt.</div></div><div class="tab_cell" style="border-bottom:none;border-top:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:16px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_2" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell" style="border-top:none;"><div class="body_item_text" style="margin-left:5px; width:155px; height:17px;">Gesamtpreis inkl. 20 % MwSt.</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:140px; height:16px;"></div></div><div class="tab_cell" style="border-top:none;"><div class="body_item_text" style="margin-left:5px; width:171px; height:17px;"></div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:10px; height:16px;">€</div></div><div class="tab_cell" style="border-left:none;"><div class="body_item_text" id="preis_ex_3" style="text-align:right;margin-right:5px; width:101px; height:16px;"></div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Kommentar :</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:35px;"></div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Der Materialbedarf wurde ohne Verschnitt u.sonstige Verluste ermittelt.</div></div><div class="tab_cell" style="border-right:none;"><div class="body_item_text" style="margin-left:5px; width:535px; height:16px;">Verpackungseinheiten beachten!</div></div><div class="tab_cell"style="border-left:none;"><div class="body_item_text" id="curDate" style="text-align:right;margin-right:5px; width:60px; height:16px;">' + outDate + '</div></div><div class="tab_cell"><div class="body_item_text" style="margin-left:5px; width:600px; height:16px;">Die Preise entsprechen den Rigips Listenpreisen und sind lediglich als Richtpreise zu verstehen</div></div></div>';
+      document.getElementById('mainTable').style.height = 404 + 31 * rowCnt;
+      input_m2();
+    }
+    function input_m2() {
+      var curCnt = parseFloat(document.getElementById("inpNum").value);
+      document.getElementById("preis_ex").innerText = curCnt;
+      document.getElementById("preis_ex_1").innerText = (parseFloat(document.getElementById("preis_1").innerText) * curCnt).toFixed(2);
+      document.getElementById("preis_ex_2").innerText = (parseFloat(document.getElementById("preis_ex_1").innerText) * 20 / 100).toFixed(2);
+      document.getElementById("preis_ex_3").innerText = (parseFloat(document.getElementById("preis_ex_1").innerText) + parseFloat(document.getElementById("preis_ex_2").innerText)).toFixed(2);
+    }
+    function Drucken() {
+      var strid = "body_frame";
+      var prtContent = document.getElementById(strid);
+      var prtCSS = '<link rel="stylesheet" href="template.css" type="text/css"/>';
+      var WinPrint = window.open('', '', 'left=-5px,top=-5px,width=625px,height=' + 404 + 31 * rowCnt + 'px,toolbar=0,scrollbars=1,status=0');
+      WinPrint.document.write('<html><head>' + prtCSS + '</head><body>');
+      WinPrint.document.write('<div id="print" class="contentpane" style="margin-right:auto;margin-left:auto;margin-top:10px;">');
+      var txt4print = prtContent.innerHTML;
+      var cbString = '';
+      for (var i = 1; i <= rowCnt; i++) {
+        cbString = '<div class="body_item_text sel">' + document.getElementById('sel' + i).value + '</div>';
+        txt4print = txt4print.replace(document.getElementById('line1' + i + '').innerHTML, cbString);
       }
-      #body_frame{
-        position: relative;
-        overflow: scroll;
-        width:620px;
-        height:560px;
-        margin-top: 37px;
-        margin-left: 17px;
-        float: left;
-      }
-      #body_head{        
-        position: relative;
-        width:620px;
-        font-size: 17px;
-        font-weight:400;
-        color:#02334e;
-        text-align: center;
-        text-decoration:underline;
-        padding-top:10px;
-        padding-bottom: 20px;
-      }
-      .body_item{
-        border:1px solid #0080d2;
-      }
-      .body_item_text{
-        position: relative;
-        width:470px;
-        font-size: 11px;
-        font-weight:400;
-        color:#02334e;
-        text-align: left;
-        float:left;
-      }
-      .body_item_button{
-       position: relative;
-       float: left;
-       width:90px;
-       height:20px; 
-       border:1px solid #888b8c;
-       border-radius: 5px;
-       font-size: 11px;
-       font-weight:600;
-       text-decoration: none;
-       text-align: center;
-       background-image: linear-gradient(to bottom, #fbfbfb, #e4e4e4);
-       -webkit-touch-callout: none;
-       -webkit-user-select: none;
-       -khtml-user-select: none;
-       -moz-user-select: none;
-       -ms-user-select: none;
-       -o-user-select: none;
-       user-select: none;
-       cursor:default;
-       margin-bottom:5px;
-       padding-top:5px;
-      }
-      .body_item_button:hover {
-       border:1px solid #0080d2;
-       background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
-      }
-      .table{
-       width:605px;
-       height:400px;
-       border:2px solid;
-      }
-      .tab_header{
-       position: relative;
-       width:605px;
-       height:105px;
-       margin-left:-2px;
-       margin-top:-2px;
-       float: left;
-       border:2px solid;
-      }
-      .tab_header1{
-       height:50px;
-      }
-      .drucken_btn{
-       top:30px;
-       left:510px;
-       width:75px;
-       position: absolute;
-      }
-      .num_btn{
-       top:30px;
-       left:20px;
-       width:75px;
-       position: absolute;
-      }
-      .PUB{
-       top:15px;
-       left:10px;
-      }
-      .tabHeader1{
-       position: absolute;
-       font-size: 15px;
-       font-weight:600;
-       top:60px;
-       width:605px;
-       text-align:center;
-       float:left;
-      }
-      .tabHeader2{
-       overflow:hidden;
-       position: relative;
-       font-size: 15px;
-       font-weight:600;
-       top:60px;
-       width:605px;
-       height:20px;
-       text-align:center;
-       float:left;
-       margin-top:5px;
-      }
-      .margin4text{
-       margin-top:5px;
-       margin-left:5px;
-      }
-      .tab_cell{
-       position: relative;
-       float: left;
-       border:1px solid;
-       margin-left:-1px;
-       margin-top:-1px;
-      }
-      .sel{
-        width:290px;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="outer_frame">
-      <div id="menu_frame">
-        <a href="#" class="button3"><div id="arrow_box"></div></a>
-        <div id="head_txt">Mengenermittlung</div>
-        <a href="#" class="button2" id="0" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Dachgeschoßausbau</a>
-        <a href="#" class="button2" id="1" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Doppel-Ständerwande</a>
-        <a href="#" class="button2" id="2" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Einfach-Ständerwande</a>
-        <a href="#" class="button2" id="3" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Lochplattendecken</a>
-        <a href="#" class="button2" id="4" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Rigips Aquaroc</a>
-        <a href="#" class="button2" id="5" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Schachtwände</a>
-        <a href="#" class="button2" id="6" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Unterdecken</a>
-        <a href="#" class="button2" id="7" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; Vorsatzschalen</a>
-        <a href="#" class="button2" id="8" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="9" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="10" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="11" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="12" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="13" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-        <a href="#" class="button2" id="14" onclick="divClick(this.id)"><div id="white_square"></div>&nbsp; </a>
-      </div>
-      <div id="body_frame">
-      </div>
+      txt4print = txt4print.replace('<img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:none;">', '<img src="rigipslogo.jpg" id="logo" style="padding-left:460px; display:block;">');
+      txt4print = txt4print.replace('<div class="body_item_button drucken_btn" id="btnDrucken" onclick="Drucken()" style="display:block">', '<div class="body_item_button drucken_btn" id="btnDrucken" style="display:none;">');
+      txt4print = txt4print.replace('<input type="text" id="inpNum" value="1" style="width:50px;text-align:right;" oninput="input_m2()">', '<div class="body_item_text margin4text" style="width:45px;text-align:right;">' + document.getElementById("preis_ex").innerText + '</div>');
+      debugger;
+      WinPrint.document.write(txt4print);
+      WinPrint.document.write('</div>');
+      WinPrint.document.write('<div id="btnPrnt" style="text-align:left;margin-top:10px;" onclick="this.style.display=\'none\';window.print();window.close();"><button>Drucken</button></div>');
+      WinPrint.document.write('</body></html>');
+      WinPrint.document.close();
+      //WinPrint.focus();
+      WinPrint.open();
+    }
+  </script>
+  <style>
+    @font-face {
+      font-family: Trebuchet_MS;
+      src: url(Trebuchet_MS.ttf);
+    }
+
+    #outer_frame {
+      width: 957px;
+      height: 632px;
+      color: #0b333c;
+      background: #FFFFFF;
+      border: 2px #b7babc solid;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      border-radius: 10px;
+      margin-top: -8px;
+      margin-left: -8px;
+      font-family: Trebuchet MS;
+    }
+
+    #menu_frame {
+      width: 295px;
+      height: 560px;
+      color: #0b333c;
+      background: #f3f3f3;
+      border: 2px solid solid;
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      border-radius: 10px;
+      margin-top: 37px;
+      margin-left: 17px;
+      text-align: left;
+      float: left;
+    }
+
+    #white_square {
+      width: 7px;
+      height: 7px;
+      background: #FFFFFF;
+      float: left;
+      position: relative;
+      top: 4px;
+    }
+
+    .button1 {
+      position: relative;
+      padding: 6px 20px;
+      margin: 0px 10px 10px 0px;
+      float: left;
+      width: 240px;
+      border: 2px solid #55beec;
+      border-radius: 10px;
+      font-size: 10px;
+      color: #FFF;
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, #30A5D9, #036FB3);
+    }
+
+    .button2 {
+      position: relative;
+      padding: 4px 10px;
+      margin: 0px 5px 6px 0px;
+      float: left;
+      width: 260px;
+      border: 2px solid #55beec;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #FFF;
+      text-decoration: none;
+      background-image: linear-gradient(to bottom, #30A5D9, #036FB3);
+    }
+
+    .button3 {
+      position: relative;
+      margin: 5px 5px 14px 0px;
+      float: left;
+      width: 38px;
+      height: 20px;
+      border: 1px solid #888b8c;
+      border-radius: 5px;
+      font-size: 10px;
+      color: #FFF;
+
+      background-image: linear-gradient(to bottom, #fbfbfb, #e4e4e4);
+    }
+
+    .button3:hover {
+      border: 1px solid #0080d2;
+      background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
+    }
+
+    #arrow_box {
+      top: 5px;
+      left: 17px;
+      position: relative;
+      background-image: linear-gradient(to bottom, #369dd3, #117bd3);
+      border: 0px solid #117bd3;
+      width: 8px;
+      height: 5px;
+      margin-top: 2px;
+
+    }
+
+    #arrow_box:after,
+    .arrow_box:before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 1;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    #arrow_box:after {
+      border-color: rgba(10, 135, 225, 0);
+      border-right-color: #0a87e1;
+      border-width: 7px;
+      margin-top: -7px;
+    }
+
+    #head_txt {
+      top: 5px;
+      left: 0px;
+      position: relative;
+      float: left;
+      width: 240px;
+      height: 20px;
+      font-size: 17px;
+      font-weight: 600;
+      color: #02334e;
+      text-align: left;
+    }
+
+    #body_frame {
+      position: relative;
+      overflow: scroll;
+      width: 620px;
+      height: 560px;
+      margin-top: 37px;
+      margin-left: 17px;
+      float: left;
+    }
+
+    #body_head {
+      position: relative;
+      width: 620px;
+      font-size: 17px;
+      font-weight: 400;
+      color: #02334e;
+      text-align: center;
+      text-decoration: underline;
+      padding-top: 10px;
+      padding-bottom: 20px;
+    }
+
+    .body_item {
+      border: 1px solid #0080d2;
+    }
+
+    .body_item_text {
+      position: relative;
+      width: 470px;
+      font-size: 11px;
+      font-weight: 400;
+      color: #02334e;
+      text-align: left;
+      float: left;
+    }
+
+    .body_item_button {
+      position: relative;
+      float: left;
+      width: 90px;
+      height: 20px;
+      border: 1px solid #888b8c;
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      background-image: linear-gradient(to bottom, #fbfbfb, #e4e4e4);
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      cursor: default;
+      margin-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .body_item_button:hover {
+      border: 1px solid #0080d2;
+      background-image: linear-gradient(to bottom, #fcfcfc, #f0f0f0);
+    }
+
+    .table {
+      width: 605px;
+      height: 400px;
+      border: 2px solid;
+    }
+
+    .tab_header {
+      position: relative;
+      width: 605px;
+      height: 105px;
+      margin-left: -2px;
+      margin-top: -2px;
+      float: left;
+      border: 2px solid;
+    }
+
+    .tab_header1 {
+      height: 50px;
+    }
+
+    .drucken_btn {
+      top: 30px;
+      left: 510px;
+      width: 75px;
+      position: absolute;
+    }
+
+    .num_btn {
+      top: 30px;
+      left: 20px;
+      width: 75px;
+      position: absolute;
+    }
+
+    .PUB {
+      top: 15px;
+      left: 10px;
+    }
+
+    .tabHeader1 {
+      position: absolute;
+      font-size: 15px;
+      font-weight: 600;
+      top: 60px;
+      width: 605px;
+      text-align: center;
+      float: left;
+    }
+
+    .tabHeader2 {
+      overflow: hidden;
+      position: relative;
+      font-size: 15px;
+      font-weight: 600;
+      top: 60px;
+      width: 605px;
+      height: 20px;
+      text-align: center;
+      float: left;
+      margin-top: 5px;
+    }
+
+    .margin4text {
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+
+    .tab_cell {
+      position: relative;
+      float: left;
+      border: 1px solid;
+      margin-left: -1px;
+      margin-top: -1px;
+    }
+
+    .sel {
+      width: 290px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="outer_frame">
+    <div id="menu_frame">
+      <a href="#" class="button3">
+        <div id="arrow_box"></div>
+      </a>
+      <div id="head_txt">Mengenermittlung</div>
+      <a href="#" class="button2" id="0" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Dachgeschoßausbau
+      </a>
+      <a href="#" class="button2" id="1" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Doppel-Ständerwande
+      </a>
+      <a href="#" class="button2" id="2" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Einfach-Ständerwande
+      </a>
+      <a href="#" class="button2" id="3" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Lochplattendecken
+      </a>
+      <a href="#" class="button2" id="4" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Rigips Aquaroc
+      </a>
+      <a href="#" class="button2" id="5" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Schachtwände
+      </a>
+      <a href="#" class="button2" id="6" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Unterdecken
+      </a>
+      <a href="#" class="button2" id="7" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp; Vorsatzschalen
+      </a>
+      <a href="#" class="button2" id="8" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="9" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="10" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="11" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="12" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="13" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
+      <a href="#" class="button2" id="14" onclick="divClick(this.id)">
+        <div id="white_square"></div>&nbsp;
+      </a>
     </div>
-  </body>
+    <div id="body_frame">
+    </div>
+  </div>
+</body>
+
 </html>
